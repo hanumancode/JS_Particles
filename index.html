@@ -2,9 +2,27 @@
 <html>
 <head>
 	<title>JS Particles</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="particles-js"></div> <!-- the canvas for particles-->
+	<div id="particles_js"><!-- the canvas for particles-->
+		<div id="login">
+			<form>
+				<div>
+					<label for="username">Username</label>
+					<br>
+					<input type="text" placeholder="Username">
+				</div>
+
+				<div>
+					<label for="password">Password</label>
+					<br/>
+					<input type="text" placeholder="Password">
+				</div>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+	</div> 
 
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
@@ -17,7 +35,7 @@
 		3. function callback fires off when the json file is loaded
 		*/
 
-		particlesJS.load('particles-js','particles.json', function(){
+		particlesJS.load('particles_js','particles.json', function(){
 			console.log('particles.json loaded...')
 		});
 			</script>
